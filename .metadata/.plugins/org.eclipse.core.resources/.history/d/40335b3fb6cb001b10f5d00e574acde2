@@ -1,0 +1,20 @@
+package test.project.employeemanager.model;
+
+import java.io.Serializable;
+
+@Entity
+
+public class Employee implements Serializable{
+    @id
+    @GeneratedValue(strategy=GenerationType.AUTU)
+    @Column(nullable = false, updatable = false)
+    private long id;
+    private String name;
+    private String email;
+    private String jobTitle;
+    private String phone;
+    private String imageURL;
+    @Column(nullable = false, updatable = false)
+    private String employeeCode;
+}
+

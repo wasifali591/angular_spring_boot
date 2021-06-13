@@ -1,0 +1,5 @@
+package test.project.employeemanager.model;
+
+public @interface Column {
+
+}
